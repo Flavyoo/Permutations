@@ -1,0 +1,73 @@
+Flavio Andrade
+3/29/17
+
+
+TEST RESULTS
+________________________________________________________________________________
+Testing for M = 5
+
+Permutation method 3.
+permute3, N = 8, Time = 0.002983
+permute3, N = 8, Time = 0.001462
+permute3, N = 8, Time = 0.000791
+permute3, N = 8, Time = 0.000336
+permute3, N = 8, Time = 0.000359
+permute3, N = 9, Time = 0.003154
+permute3, N = 9, Time = 0.003355
+permute3, N = 9, Time = 0.003777
+permute3, N = 9, Time = 0.003595
+permute3, N = 10, Time = 0.034307
+permute3, N = 10, Time = 0.028141
+permute3, N = 10, Time = 0.035900
+permute3, N = 10, Time = 0.028066
+Permutation Three average time = 0.087736
+Permutation Three total time = 0.146226
+Permutation method 1.
+permute1, N = 8, Time = 0.003420
+permute1, N = 8, Time = 0.013442
+permute1, N = 8, Time = 0.001280
+permute1, N = 8, Time = 0.000994
+permute1, N = 8, Time = 0.000808
+permute1, N = 9, Time = 0.007859
+permute1, N = 9, Time = 0.006828
+permute1, N = 9, Time = 0.007640
+permute1, N = 9, Time = 0.008000
+permute1, N = 10, Time = 0.074193
+permute1, N = 10, Time = 0.097417
+permute1, N = 10, Time = 0.073281
+permute1, N = 10, Time = 0.071169
+
+Permutation One total time = 0.366331
+Permutation One average time = 0.219799
+For this test, Permutation Three is 250.52 percent faster than Permutation 1.
+
+
+
+PERMUTE.java:
+
+Permute.java takes three arguments, the first is the algorithm that is being run,
+which is an integer that can be, 1, 2, or 3. The second arguments is the size
+of the permutation which is also an integer. The third argument is an integer
+which is used to determine whether or not to print the values. Use 1 to print,
+and any other number to not print.
+
+THE ComparePerformance Class:
+
+This ComparePerformance class is implemented to test values of N that are 8, 9, 10.
+The time for each value of N is computed M times. M is a variable that takes
+in the number of times to test each value of N. Higher values of N are not
+tested because the time will increase by M times the time it takes to permute N,
+for N > 10. If this result is 'A', for each N > 10, add all these 'A's
+for the total time.
+
+The program only prints the time of each run, if the interval of testing is <= 5,
+otherwise, the times of each permutation is not printed
+because computation time will be too expensive.
+
+The permutation methods in permute.java include a second boolean parameter which
+is used to determine whether or not to print the values.
+The total computation time for an interval m was, the average time, and the ratio
+of the computation times were calculated.
+
+The third parameter is a number treated as a boolean to decide whether to print
+the permutations or not. Use 1 to print, and any other number to not print.
